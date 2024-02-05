@@ -167,7 +167,7 @@ module.exports.verify_email = async (req, res) => {
                             email,
                             loginMethod: 'manually',
                             password,
-                            image: `http://localhost:3000/userImage/${imageName}`
+                            image: `https://ill-tan-tuna-sock.cyclic.app/userImage/${imageName}`
                         })
 
                         const token = jwt.sign({
