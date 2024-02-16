@@ -25,7 +25,7 @@ dotEnv.config({
 app.use(cookieParser());
 app.use(bodyParser.json());
 app.use(cors({
-    origin: process.env.FRONTEND_URL,
+    origin: process.env.FRONTEND_URL || 'https://blogifyblog.web.app',
     credentials: true
 }));
 
